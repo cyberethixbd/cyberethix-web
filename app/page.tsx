@@ -254,7 +254,7 @@ export default function HomePage() {
           </a>
           {/* Facebook Group */}
           <a
-            href="https://facebook.com/group/cyberethixbd/"
+            href="https://facebook.com/groups/cyberethixbd/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-green-500/10 hover:bg-green-500/20 transition"
