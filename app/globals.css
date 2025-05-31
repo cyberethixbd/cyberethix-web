@@ -32,7 +32,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
@@ -47,7 +47,7 @@
   }
 
   .cyber-gradient {
-    background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+    @apply bg-gradient-to-tr from-green-700 to-green-400;
   }
 }
 
