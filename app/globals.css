@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 9%; /* gray-900 */
+    --foreground: 142 76% 73%; /* green-400 */
+    --card: 220 13% 9%;
+    --card-foreground: 142 76% 73%;
+    --popover: 220 13% 9%;
+    --popover-foreground: 142 76% 73%;
+    --primary: 142 76% 36%; /* green-600 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 28% 17%; /* gray-800 */
+    --secondary-foreground: 142 76% 73%;
+    --muted: 215 25% 27%; /* gray-700 */
+    --muted-foreground: 220 9% 64%; /* gray-400 */
+    --accent: 142 76% 20%; /* green-800 */
+    --accent-foreground: 142 76% 73%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 142 76% 73% / 0.2; /* green-400 with opacity */
+    --input: 142 76% 73% / 0.2;
+    --ring: 142 76% 73%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .cyber-glow {
+    @apply shadow-lg shadow-green-500/20;
+  }
+
+  .cyber-border {
+    @apply border border-green-500/30;
+  }
+
+  .cyber-gradient {
+    background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+  }
+}
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Preload critical fonts */
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
