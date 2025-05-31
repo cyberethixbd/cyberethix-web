@@ -1,7 +1,5 @@
-
-
 import type { Metadata } from "next"
-import { Shield, BookOpen, ShoppingCart, Users, ArrowRight, Terminal, Lock, Zap } from "lucide-react"
+import { Shield, BookOpen, ShoppingCart, Users, ArrowRight, Terminal, Lock, Zap, Facebook, Group, Send, Youtube, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
@@ -238,6 +236,62 @@ export default function HomePage() {
               <div className="text-gray-400">Community Members</div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Social Media Links */}
+      <section className="py-8 bg-gray-900 border-t border-green-500/20">
+        <div className="container mx-auto flex justify-center space-x-6 md:space-x-8">
+          {/* Facebook Page */}
+          <a
+            href="https://facebook.com/cyberethixbd/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-green-500/10 hover:bg-green-500/20 transition"
+            aria-label="Facebook Page"
+          >
+            <Facebook className="h-6 w-6 text-green-400" />
+          </a>
+          {/* Facebook Group */}
+          <a
+            href="https://facebook.com/group/cyberethixbd/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-green-500/10 hover:bg-green-500/20 transition"
+            aria-label="Facebook Group"
+          >
+            <Group className="h-6 w-6 text-green-400" />
+          </a>
+          {/* Telegram */}
+          <a
+            href="https://t.me/cyberethixbd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-green-500/10 hover:bg-green-500/20 transition"
+            aria-label="Telegram"
+          >
+            <Send className="h-6 w-6 text-green-400" />
+          </a>
+          {/* YouTube */}
+          <a
+            href="https://www.youtube.com/@cyberethixbd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-green-500/10 hover:bg-green-500/20 transition"
+            aria-label="YouTube"
+          >
+            <Youtube className="h-6 w-6 text-green-400" />
+          </a>
+          {/* GitHub */}
+          <a
+            href="https://github.com/cyberethixbd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-green-500/10 hover:bg-green-500/20 transition"
+            aria-label="GitHub"
+          >
+            <Github className="h-6 w-6 text-green-400" />
+          </a>
         </div>
       </section>
 
