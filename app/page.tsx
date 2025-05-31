@@ -1,3 +1,6 @@
+
+
+
 import type { Metadata } from "next"
 import { Shield, BookOpen, ShoppingCart, Users, ArrowRight, Terminal, Lock, Zap, Facebook, Group, Send, Youtube, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -67,6 +70,46 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
+
+
+
+import React from "react";
+import { Link } from "react-router-dom";
+
+function Home() {
+  return (
+    <div>
+      <h1>Welcome to CyberEthix BD</h1>
+      <Link to="/login">
+        <button>Login</button>
+      </Link>
+    </div>
+  );
+}
+
+export default Home;
+
+
+
+
+
+
+
+import React from "react";
+import { Link } from "react-router-dom";
+
+function Home() {
+  return (
+    <div>
+      <h1>Welcome to CyberEthix BD</h1>
+      <Link to="/login">Login</Link>
+    </div>
+  );
+}
+
+export default Home;
+
+      
       <section className="py-20 px-4 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent"></div>
         <div className="container mx-auto relative z-10">
