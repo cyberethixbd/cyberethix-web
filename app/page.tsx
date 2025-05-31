@@ -1,3 +1,5 @@
+
+
 import type { Metadata } from "next"
 import { Shield, BookOpen, ShoppingCart, Users, ArrowRight, Terminal, Lock, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -282,7 +284,7 @@ export default function HomePage() {
               <h3 className="text-white font-semibold mb-4">Contact</h3>
               <div className="space-y-2 text-gray-400">
                 <p>Dhaka, Bangladesh</p>
-                <p>info@cyberethixbd.com</p>
+                <p>cyberethixbd@yahoo.com</p>
                 <p>+880 1XXX-XXXXXX</p>
               </div>
             </div>
